@@ -1,10 +1,12 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@astrojs/netlify': ^0.1.0
   '@astrojs/tailwind': ^0.1.0
   astro: ^1.0.0-beta.0
 
 devDependencies:
+  '@astrojs/netlify': 0.1.0
   '@astrojs/tailwind': 0.1.0
   astro: 1.0.0-beta.2
 
@@ -68,6 +70,12 @@ packages:
       unist-util-visit: 4.1.0
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@astrojs/netlify/0.1.0:
+    resolution: {integrity: sha512-X2OVcggcaD/2gwJ198r5n+0WDTifXPMoVsmHj2PjrFXI+O0RnMVMEcYZZ+mFjukLB9hdwyUVodsCHtqmvv4rFg==}
+    dependencies:
+      '@astrojs/webapi': 0.11.0
     dev: true
 
   /@astrojs/prism/0.4.1:
