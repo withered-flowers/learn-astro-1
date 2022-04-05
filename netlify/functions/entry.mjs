@@ -674,7 +674,7 @@ function renderElement(name, { props: _props, children = "" }, shouldEscape = tr
 }
 
 const $$metadata$1 = createMetadata("/src/layouts/BaseLayout.astro", { modules: [], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro$1 = createAstro("/src/layouts/BaseLayout.astro", "http://localhost:3000/", "file:///Users/standard/Workspaces/projects/learn-astro-1/");
+const $$Astro$1 = createAstro("/src/layouts/BaseLayout.astro", "https://learn-astro-ssr.netlify.app/", "file:///Users/standard/Workspaces/projects/learn-astro-1/");
 const $$BaseLayout = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
   Astro2.self = $$BaseLayout;
@@ -701,7 +701,7 @@ var $$module1 = /*#__PURE__*/Object.freeze(/*#__PURE__*/Object.defineProperty({
 var base = '';
 
 const $$metadata = createMetadata("/src/pages/index.astro", { modules: [{ module: $$module1, specifier: "../layouts/BaseLayout.astro", assert: {} }], hydratedComponents: [], clientOnlyComponents: [], hydrationDirectives: /* @__PURE__ */ new Set([]), hoisted: [] });
-const $$Astro = createAstro("/src/pages/index.astro", "http://localhost:3000/", "file:///Users/standard/Workspaces/projects/learn-astro-1/");
+const $$Astro = createAstro("/src/pages/index.astro", "https://learn-astro-ssr.netlify.app/", "file:///Users/standard/Workspaces/projects/learn-astro-1/");
 const $$Index = createComponent(async ($$result, $$props, $$slots) => {
   const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
   Astro2.self = $$Index;
@@ -3632,11 +3632,11 @@ new RegExp(`\\.(${Array.from(STYLE_EXTENSIONS).map((s) => s.slice(1)).join("|")}
 const SCRIPT_EXTENSIONS = /* @__PURE__ */ new Set([".js", ".ts"]);
 new RegExp(`\\.(${Array.from(SCRIPT_EXTENSIONS).map((s) => s.slice(1)).join("|")})($|\\?)`);
 
-const _manifest = Object.assign(deserializeManifest({"routes":[{"file":"","links":["assets/asset.fc1e4cc3.css"],"scripts":[],"routeData":{"type":"page","pattern":"^\\/$","params":[],"component":"src/pages/index.astro","pathname":"/"}},{"file":"","links":[],"scripts":[],"routeData":{"type":"endpoint","pattern":"^\\/apis\\/todos$","params":[],"component":"src/pages/apis/todos.js","pathname":"/apis/todos"}}],"site":"http://localhost:3000/","markdown":{"render":[null,{"drafts":false,"mode":"mdx","syntaxHighlight":"shiki","shikiConfig":{},"remarkPlugins":[],"rehypePlugins":[]}]},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","astro:scripts/before-hydration.js":"data:text/javascript;charset=utf-8,//[no before-hydration script]"}}), {
+const _manifest = Object.assign(deserializeManifest({"routes":[{"file":"","links":["assets/asset.fc1e4cc3.css"],"scripts":[],"routeData":{"type":"page","pattern":"^\\/$","params":[],"component":"src/pages/index.astro","pathname":"/"}},{"file":"","links":[],"scripts":[],"routeData":{"type":"endpoint","pattern":"^\\/apis\\/todos$","params":[],"component":"src/pages/apis/todos.js","pathname":"/apis/todos"}}],"site":"https://learn-astro-ssr.netlify.app/","markdown":{"render":[null,{"drafts":false,"mode":"mdx","syntaxHighlight":"shiki","shikiConfig":{},"remarkPlugins":[],"rehypePlugins":[]}]},"pageMap":null,"renderers":[],"entryModules":{"\u0000@astrojs-ssr-virtual-entry":"entry.mjs","astro:scripts/before-hydration.js":"data:text/javascript;charset=utf-8,//[no before-hydration script]"}}), {
 	pageMap: pageMap,
 	renderers: renderers
 });
-const _args = {"site":"http://localhost:3000/"};
+const _args = {"site":"https://learn-astro-ssr.netlify.app/"};
 
 const _exports = adapter.createExports(_manifest, _args);
 const handler = _exports['handler'];
