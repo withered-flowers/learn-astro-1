@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import PostTable from "../components/PostTable.svelte";
 
 const baseUrl = Astro.site.origin;
 const url = `${baseUrl}/apis/todos`;
@@ -11,25 +12,5 @@ const posts = data.posts;
 ---
 <BaseLayout title="Hello Astro">
 	<h1 class="text-3xl mx-auto">List of Posts</h1>
-	
-	<table>
-		<thead>
-			<tr>
-				<th class="border border-slate-600">Id</th>
-				<th class="border border-slate-600">UserId</th>
-				<th class="border border-slate-600">Title</th>
-				<th class="border border-slate-600">Body</th>
-			</tr>
-		</thead>
-		<tbody>
-			{posts.map(post => (
-				<tr>
-					<td class="border border-slate-600">{post.id}</td>
-					<td class="border border-slate-600">{post.userId}</td>
-					<td class="border border-slate-600">{post.title}</td>
-					<td class="border border-slate-600">{post.body}</td>
-				</tr>
-			))}
-		</tbody>
-	</table>
+	<PostTable posts={posts} />
 </BaseLayout>
